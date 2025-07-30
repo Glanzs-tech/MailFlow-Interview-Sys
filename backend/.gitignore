@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+.env
+dist/
+build/
+coverage/
+logs/
+*.log
+npm-debug.log*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDEs/Editors
+.vscode/
+.idea/
+*.swp
+
+# OS generated files
+*.bak
+*.tmp
