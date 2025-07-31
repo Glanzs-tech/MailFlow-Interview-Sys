@@ -21,7 +21,8 @@
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.18.0",
     "mongoose": "^8.16.5",
-    "nodemailer": "^7.0.5"
+    "nodemailer": "^7.0.5",
+    "openai": "^5.11.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"

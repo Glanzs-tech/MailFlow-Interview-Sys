@@ -8,6 +8,7 @@ import campaignRoutes from "./src/routes/campaignRoutes.js";
 import contactRoutes from "./src/routes/contactRoutes.js";
 import analyticsRoutes from "./src/routes/analyticsRoutes.js";
 import emailRoutes from './src/routes/emailRoutes.js';
+import aiRoutes from "./src/routes/aiRoutes.js"; 
 
 dotenv.config();
 
@@ -21,7 +22,8 @@ app.use("/api/auth", authRoutes);
 app.use("/api/campaigns", campaignRoutes);
 app.use("/api/contacts", contactRoutes);
 app.use("/api/analytics", analyticsRoutes);
-app.use('/api/email', emailRoutes);
+app.use("/api/email", emailRoutes);
+app.use("/api/ai", aiRoutes); 
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
