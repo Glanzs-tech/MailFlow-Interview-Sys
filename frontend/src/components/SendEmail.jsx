@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import axios from 'axios';
 
 const SendEmail = () => {
   const [contacts, setContacts] = useState([]);
@@ -6,6 +7,7 @@ const SendEmail = () => {
   const [subject, setSubject] = useState('');
   const [body, setBody] = useState('');
   const [showDropdown, setShowDropdown] = useState(false);
+  const [loadingAI, setLoadingAI] = useState(false);
   const dropdownRef = useRef(null);
 
   useEffect(() => {
@@ -45,6 +47,39 @@ const SendEmail = () => {
     setBody('');
   };
 
+const handleGenerateAI = async () => {
+  const recipient = selectedEmails.join(', ');
+
+  if (!recipient || !subject.trim()) {
+    alert('Recipient and Subject are required for AI email generation.');
+    return;
+  }
+
+  const prompt = `Write a professional marketing email to ${recipient} with the subject "${subject}". Make it concise and persuasive.`;
+
+  setLoadingAI(true);
+
+  try {
+    const response = await axios.post(
+      `${import.meta.env.VITE_API_BASE_URL}/api/ai/generate-email`,
+      { prompt }, // 🔁 Now sending the correct key
+      {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }
+    );
+
+    setBody(response.data.content); // ✅ Matches backend response
+  } catch (error) {
+    console.error('AI Generation Error:', error?.response?.data || error.message);
+    alert('Failed to generate email using AI.');
+  } finally {
+    setLoadingAI(false);
+  }
+};
+
+
   const styles = {
     container: { maxWidth: '600px', margin: 'auto', padding: '20px', textAlign: 'center' },
     input: {
@@ -53,7 +88,7 @@ const SendEmail = () => {
       width: '90%',
       borderRadius: '4px',
       border: '1px solid #ccc',
-      backgroundColor: '#1e1e1e', // match dark background
+      backgroundColor: '#1e1e1e',
       color: '#fff',
     },
     customSelect: {
@@ -63,7 +98,7 @@ const SendEmail = () => {
       width: '90%',
       margin: '10px auto',
       cursor: 'pointer',
-      backgroundColor: '#1e1e1e', // match dark background
+      backgroundColor: '#1e1e1e',
       color: '#fff',
       textAlign: 'left',
     },
@@ -97,7 +132,17 @@ const SendEmail = () => {
       border: 'none',
       cursor: 'pointer',
       borderRadius: '4px',
-    }
+      margin: '5px',
+    },
+    aiButton: {
+      padding: '8px 16px',
+      backgroundColor: '#007bff',
+      color: '#fff',
+      border: 'none',
+      cursor: 'pointer',
+      borderRadius: '4px',
+      marginBottom: '10px',
+    },
   };
 
   return (
@@ -117,7 +162,9 @@ const SendEmail = () => {
           <div style={styles.dropdown}>
             {contacts.map((contact, idx) => (
               <label key={idx} style={styles.checkboxLabel}>
-                <span>{contact.name} ({contact.email})</span>
+                <span>
+                  {contact.name} ({contact.email})
+                </span>
                 <input
                   type="checkbox"
                   checked={selectedEmails.includes(contact.email)}
@@ -136,6 +183,11 @@ const SendEmail = () => {
         value={subject}
         onChange={(e) => setSubject(e.target.value)}
       />
+
+      <button style={styles.aiButton} onClick={handleGenerateAI} disabled={loadingAI}>
+        {loadingAI ? 'Generating...' : '⚡ Generate with AI'}
+      </button>
+
       <textarea
         style={{ ...styles.input, height: '100px' }}
         placeholder="Email body"

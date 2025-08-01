@@ -6,7 +6,7 @@
 ## 🎯 Minimum Viable Features
 
 ### 🎨 Frontend (Day 1-2)
-- [✔ ] **Simple Auth** - Login/Register forms
+- [ ✔] **Simple Auth** - Login/Register forms
 - [ ✔] **Dashboard** - Basic campaign list view
 - [ ✔] **Email Editor** - Simple text/HTML editor
 - [ ✔] **Contact List** - Add/view contacts

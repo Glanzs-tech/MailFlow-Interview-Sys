@@ -15,7 +15,13 @@ dotenv.config();
 const app = express();
 connectDB();
 
-app.use(cors());
+// FIX: Add proper CORS config
+const corsOptions = {
+  origin: 'http://localhost:5173',
+  credentials: true,
+};
+app.use(cors(corsOptions));
+
 app.use(express.json());
 
 app.use("/api/auth", authRoutes);
