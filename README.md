@@ -16,18 +16,18 @@
 <h3>🚀 AI-Powered Email Marketing Platform</h3>
 <p><em>Build the future of email marketing with GenAI</em></p>
 
-[![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://github.com/Juni-crypto/MailFlow-Interview-Sys)
-[![Interview Project](https://img.shields.io/badge/Interview-Project-4F46E5.svg)](https://github.com/Juni-crypto/MailFlow-Interview-Sys)
-[![Full Stack](https://img.shields.io/badge/Full%20Stack-GenAI-06B6D4.svg)](https://github.com/Juni-crypto/MailFlow-Interview-Sys)
+[![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red.svg)](https://github.com/Glanzs-tech/MailFlow-Interview-Sys)
+[![Interview Project](https://img.shields.io/badge/Interview-Project-4F46E5.svg)](https://github.com/Glanzs-tech/MailFlow-Interview-Sys)
+[![Full Stack](https://img.shields.io/badge/Full%20Stack-GenAI-06B6D4.svg)](https://github.com/Glanzs-tech/MailFlow-Interview-Sys)
 
 </div>
 
 *A modern, AI-powered email marketing platform built for the GenAI era*
 
-[![Stars](https://img.shields.io/github/stars/Juni-crypto/MailFlow-Interview-Sys?style=social)](https://github.com/Juni-crypto/MailFlow-Interview-Sys/stargazers)
-[![Forks](https://img.shields.io/github/forks/Juni-crypto/MailFlow-Interview-Sys?style=social)](https://github.com/Juni-crypto/MailFlow-Interview-Sys/network/members)
-[![Issues](https://img.shields.io/github/issues/Juni-crypto/MailFlow-Interview-Sys)](https://github.com/Juni-crypto/MailFlow-Interview-Sys/issues)
-[![License](https://img.shields.io/github/license/Juni-crypto/MailFlow-Interview-Sys)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/Glanzs-tech/MailFlow-Interview-Sys?style=social)](https://github.com/Glanzs-tech/MailFlow-Interview-Sys/stargazers)
+[![Forks](https://img.shields.io/github/forks/Glanzs-tech/MailFlow-Interview-Sys?style=social)](https://github.com/Glanzs-tech/MailFlow-Interview-Sys/network/members)
+[![Issues](https://img.shields.io/github/issues/Glanzs-tech/MailFlow-Interview-Sys)](https://github.com/Glanzs-tech/MailFlow-Interview-Sys/issues)
+[![License](https://img.shields.io/github/license/Glanzs-tech/MailFlow-Interview-Sys)](LICENSE)
 
 </div>
 
@@ -76,20 +76,27 @@ MailFlow is a comprehensive email marketing platform similar to Mailchimp, but e
 
 ## 📅 Interview Timeline & Expectations
 
-**Start Date**: July 27, 2025
-**Total Duration**: 7 days
-**Final Submission**: August 3, 2025 (11:59 PM IST)
+**🚀 Timeline starts automatically when you raise your Phase-1 PR!**
+**Total Duration**: 7 days from your Phase-1 PR
+**Final Submission**: Day 7 (11:59 PM IST)
 
-### 📋 Phase Schedule:
-- **Phase 1**: July 27-29, 2025 (Days 1-3) - Core Platform
-- **Phase 2**: July 30-31, 2025 (Days 4-5) - AI Integration
-- **Phase 3**: August 1-2, 2025 (Days 6-7) - Deployment
-- **Final Review**: August 3, 2025 - Submit final PR
+### 📋 Phase Schedule (Dynamic Timeline):
+- **Phase 1**: Days 1-3 (from Phase-1 PR date) - Core Platform
+- **Phase 2**: Days 4-5 - AI Integration
+- **Phase 3**: Days 6-7 - Deployment
+- **Final Review**: Day 7 - Submit final PR
 
 ### ⏰ Daily Expectations:
 - **Daily Progress Updates**: Submit commits by 6 PM IST each day
 - **Phase Completion**: Submit PR within 24 hours of phase deadline
 - **Communication**: Respond to feedback within 4 hours during business hours
+
+### 📊 Your Personal Timeline:
+Once you raise your Phase-1 PR, your personalized timeline will be:
+- **Your Start Date**: `[Automatically set when Phase-1 PR is created]`
+- **Phase 1 Deadline**: `[Start Date + 3 days]`
+- **Phase 2 Deadline**: `[Start Date + 5 days]`
+- **Final Submission**: `[Start Date + 7 days]`
 
 <div align="center">
 
@@ -113,14 +120,14 @@ graph LR
 
 </div>
 
-## 🎯 Phase 1: Core Platform (July 27-29, 2025)
+## 🎯 Phase 1: Core Platform (Days 1-3)
 
 ```
     💻 PHASE 1: BUILD THE FOUNDATION
     
-    Day 1 (Jul 27): 🔐 Auth System
-    Day 2 (Jul 28): 📊 Dashboard + 📧 Campaigns
-    Day 3 (Jul 29): 👥 Contacts + 📤 Send Emails
+    Day 1: 🔐 Auth System
+    Day 2: 📊 Dashboard + 📧 Campaigns
+    Day 3: 👥 Contacts + 📤 Send Emails
 ```
 
 ### 🎨 Essential Frontend Features
@@ -138,15 +145,15 @@ graph LR
 - [ ] Email sending service
 - [ ] Basic analytics tracking
 
-**Deadline: July 29, 2025 (11:59 PM IST)**
+**Deadline: Day 3 (11:59 PM IST)**
 
-## 🤖 Phase 2: AI Integration (July 30-31, 2025)
+## 🤖 Phase 2: AI Integration (Days 4-5)
 
 ```
     🤖 PHASE 2: ADD AI SUPERPOWERS
     
-    Day 4 (Jul 30): 🧠 AI Content Generation
-    Day 5 (Jul 31): ⚡ Smart Features & Optimization
+    Day 4: 🧠 AI Content Generation
+    Day 5: ⚡ Smart Features & Optimization
 ```
 
 ### 🧠 AI Features
@@ -156,15 +163,15 @@ graph LR
 - [ ] Send time optimization
 - [ ] A/B testing with AI
 
-**Deadline: July 31, 2025 (11:59 PM IST)**
+**Deadline: Day 5 (11:59 PM IST)**
 
-## 🚀 Phase 3: Deployment (August 1-2, 2025)
+## 🚀 Phase 3: Deployment (Days 6-7)
 
 ```
     🚀 PHASE 3: SHIP TO PRODUCTION
     
-    Day 6 (Aug 1): 🐳 Docker + Cloud Setup
-    Day 7 (Aug 2): 🌐 Live Deployment + Final Polish
+    Day 6: 🐳 Docker + Cloud Setup
+    Day 7: 🌐 Live Deployment + Final Polish
 ```
 
 ### ☁️ Deployment Goals
@@ -174,7 +181,7 @@ graph LR
 - [ ] Environment configuration
 - [ ] Live application
 
-**Final Deadline: August 2, 2025 (11:59 PM IST)**
+**Final Deadline: Day 7 (11:59 PM IST)**
 
 ## 📝 Submission Guidelines
 
