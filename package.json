@@ -1,35 +1,51 @@
 {
-  "name": "mailflow-interview",
-  "version": "1.0.0",
-  "description": "AI-powered email marketing platform - Interview project",
-  "main": "index.js",
+  "name": "mailflow-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "react-router-dom": "^6.8.1",
+    "axios": "^1.3.4",
+    "react-hook-form": "^7.43.9",
+    "react-query": "^3.39.3",
+    "react-hot-toast": "^2.4.0",
+    "lucide-react": "^0.263.1",
+    "tailwindcss": "^3.2.7",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "@tailwindcss/forms": "^0.5.3",
+    "react-quill": "^2.0.0",
+    "recharts": "^2.5.0",
+    "date-fns": "^2.29.3"
+  },
   "scripts": {
-    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
-    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
-    "dev:frontend": "cd frontend && npm start",
-    "dev:backend": "cd backend && npm run dev",
-    "build": "cd frontend && npm run build",
-    "test": "npm run test:frontend && npm run test:backend",
-    "test:frontend": "cd frontend && npm test",
-    "test:backend": "cd backend && npm test",
-    "docker:build": "docker-compose build",
-    "docker:up": "docker-compose up",
-    "docker:down": "docker-compose down"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "keywords": [
-    "email-marketing",
-    "ai",
-    "mailchimp",
-    "interview",
-    "fullstack"
-  ],
-  "author": "Interview Candidate",
-  "license": "MIT",
-  "devDependencies": {
-    "concurrently": "^8.2.2"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=8.0.0"
-  }
-}
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:8000"
+} 
