@@ -1,3 +1,8 @@
+import dotenv from 'dotenv';
+dotenv.config(); 
+
+console.log('🌱 MONGO_URI:', process.env.MONGO_URI); // Debug line
+
 import mongoose from 'mongoose';
 
 const connectDB = async () => {
