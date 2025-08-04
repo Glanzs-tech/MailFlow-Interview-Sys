@@ -1,19 +1,27 @@
-name: 🚀 Deploy Backend to Railway
+name: Deploy Backend to Railway
 
 on:
   push:
     branches:
-      - phase-3/ishika-deployment  # Or `main`, whichever branch you use for deployment
+      - phase-3/ishika-deployment
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: 📥 Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: 🚀 Deploy to Railway
-        uses: railwayapp/railway-action@v1
+      - name: 🛠 Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          projectId: ${{ secrets.RAILWAY_PROJECT_ID }}
-          token: ${{ secrets.RAILWAY_TOKEN }}
+          node-version: 20
+
+      - name: Install Railway CLI
+        run: npm install -g railway
+
+      - name: Deploy to Railway via CLI
+        run: railway up --service backend
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
