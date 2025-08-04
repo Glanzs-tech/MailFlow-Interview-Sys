@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: 🚀 Deploy to Railway
-        uses: railwayapp/railway-action@v1.2.4
+        uses: railwayapp/railway-action@v1
         with:
           projectId: ${{ secrets.RAILWAY_PROJECT_ID }}
           token: ${{ secrets.RAILWAY_TOKEN }}
