@@ -1,0 +1,19 @@
+name: 🚀 Deploy Backend to Railway
+
+on:
+  push:
+    branches:
+      - phase-3/ishika-deployment  # Or `main`, whichever branch you use for deployment
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v3
+
+      - name: 🚀 Deploy to Railway
+        uses: railwayapp/railway-action@v1.2.4
+        with:
+          projectId: ${{ secrets.RAILWAY_PROJECT_ID }}
+          token: ${{ secrets.RAILWAY_TOKEN }}
