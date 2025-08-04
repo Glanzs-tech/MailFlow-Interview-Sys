@@ -18,10 +18,10 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install Railway CLI
+      - name: Install Latest Railway CLI
         run: npm install -g @railway/cli
 
-      - name: Deploy to Railway via CLI
-        run: railway up --service backend
+      - name: Deploy to Railway
+        run: railway up --service MailFlow-Interview-Sys
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
