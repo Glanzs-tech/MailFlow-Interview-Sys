@@ -20,3 +20,5 @@ Thumbs.db
 # OS generated files
 *.bak
 *.tmp
+.env
+node_modules/
