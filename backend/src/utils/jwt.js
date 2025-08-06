@@ -1,8 +1,9 @@
 import jwt from "jsonwebtoken";
 
-const SECRET = process.env.JWT_SECRET || "supersecret";
+const SECRET = "Utpal_Secret";
 
 export function generateToken(payload) {
+  console.log(SECRET);
   return jwt.sign(payload, SECRET, { expiresIn: "1d" });
 }
 

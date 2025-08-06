@@ -29,7 +29,7 @@ export const registerService = async (
   await newUser.save();
 
   const payload = {
-    id: newUser._id,
+    _id: newUser._id,
     name: newUser.name,
     email: newUser.email,
   };
@@ -53,7 +53,7 @@ export const loginService = async (email, password) => {
   if (!isMatch) throw new Error("Invalid email or password");
 
   const payload = {
-    id: user._id,
+    _id: user._id,
     name: user.name,
     email: user.email,
   };

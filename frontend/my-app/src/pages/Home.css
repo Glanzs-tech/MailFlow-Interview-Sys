@@ -11,7 +11,6 @@
   padding: 4rem 6%;
   align-items: center;
   justify-content: space-between;
-  margin-top: 100px;
 }
 
 .hero-text {
@@ -34,4 +33,38 @@
   line-height: 1.6;
   color: #dcdcdc;
   margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.campaign-btn {
+  background-color: #5cc6f3;
+  color: #0d0620;
+}
+
+.campaign-btn:hover {
+  background-color: #3db8ee;
+}
+
+.contacts-btn {
+  background-color: #ff7a5a;
+  color: #fff;
+}
+
+.contacts-btn:hover {
+  background-color: #ff6347;
 }
