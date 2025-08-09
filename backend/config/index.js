@@ -1,0 +1,12 @@
+export default {
+  PORT: process.env.PORT,
+  FRONTEND_URL: process.env.FRONTEND_URL,
+  API_HOST: process.env.API_HOST,
+  MONGO_URI: process.env.MONGO_URI,
+  SALT_ROUNDS: process.env.SALT_ROUNDS,
+  ACCESS_TOKEN_SECRET: process.env.ACCESS_TOKEN_SECRET,
+  ACCESS_TOKEN_EXPIRY: process.env.ACCESS_TOKEN_EXPIRY,
+  REFRESH_TOKEN_SECRET: process.env.REFRESH_TOKEN_SECRET,
+  REFRESH_TOKEN_EXPIRY: process.env.REFRESH_TOKEN_EXPIRY,
+  OTP_EXPIRY: process.env.OTP_EXPIRY,
+  RUNTIME: process.env.RUNTIME,}
